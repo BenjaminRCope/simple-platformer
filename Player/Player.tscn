@@ -1,0 +1,118 @@
+[gd_scene load_steps=21 format=3 uid="uid://d3wr3ve7y630b"]
+
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_74x5m"]
+[ext_resource type="Texture2D" uid="uid://d1pb1d413dlaq" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/idle/Sprites/idle-1.png" id="2_gvmel"]
+[ext_resource type="Texture2D" uid="uid://cyyawl6gg4ayb" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/idle/Sprites/idle-2.png" id="3_cgsyb"]
+[ext_resource type="Texture2D" uid="uid://p41mlsw6bpyy" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/idle/Sprites/idle-3.png" id="4_nf5d1"]
+[ext_resource type="Texture2D" uid="uid://br6egmnskhsln" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/idle/Sprites/idle-4.png" id="5_pysac"]
+[ext_resource type="Texture2D" uid="uid://dl1b8dh68bv5x" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/jump/Sprites/jump-1.png" id="6_o44gw"]
+[ext_resource type="Texture2D" uid="uid://beiywpxcwfaiy" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/jump/Sprites/jump-2.png" id="7_xc1rb"]
+[ext_resource type="Texture2D" uid="uid://b6te6y3k3vekg" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/jump/Sprites/jump-3.png" id="8_j40ir"]
+[ext_resource type="Texture2D" uid="uid://dmddh3t5wjscj" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/jump/Sprites/jump-4.png" id="9_yd1h5"]
+[ext_resource type="Texture2D" uid="uid://cjv5ki64yh3ee" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/jump/Sprites/jump-5.png" id="10_1511b"]
+[ext_resource type="Texture2D" uid="uid://ch1x4uve2bnt3" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/run/Sprites/run-1.png" id="11_xonre"]
+[ext_resource type="Texture2D" uid="uid://q1rmu17snbks" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/run/Sprites/run-2.png" id="12_je4sx"]
+[ext_resource type="Texture2D" uid="uid://cywbhqoat0r4c" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/run/Sprites/run-3.png" id="13_lx6hs"]
+[ext_resource type="Texture2D" uid="uid://clxbd55tvvyw" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/run/Sprites/run-4.png" id="14_levtl"]
+[ext_resource type="Texture2D" uid="uid://dqqhw3jxt0ld8" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/run/Sprites/run-5.png" id="15_534tn"]
+[ext_resource type="Texture2D" uid="uid://cqyl5g3nmdh2h" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/run/Sprites/run-6.png" id="16_tvigh"]
+[ext_resource type="Texture2D" uid="uid://lqyteadfdgg7" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/run/Sprites/run-7.png" id="17_h6im3"]
+[ext_resource type="Texture2D" uid="uid://dfv4i7ged1srw" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Players/Fiery Imp/run/Sprites/run-8.png" id="18_r3h0q"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_18s00"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vccoq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gvmel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cgsyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nf5d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pysac")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_o44gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xc1rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_j40ir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yd1h5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1511b")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_o44gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xc1rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_j40ir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yd1h5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1511b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xonre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_je4sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_lx6hs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_levtl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_534tn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_tvigh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_h6im3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_r3h0q")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_74x5m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(18, 21)
+shape = SubResource("CapsuleShape2D_18s00")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(17, 12)
+sprite_frames = SubResource("SpriteFrames_vccoq")
+animation = &"Run"
