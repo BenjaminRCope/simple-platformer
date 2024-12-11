@@ -4,10 +4,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
-@onready var anim = get_node("AnimatedSprite2D")
-
-func _ready() -> void:
-	anim.play("Idle")
+@onready var anim = get_node("AnimationPlayer")
 	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -24,9 +21,10 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
-		anim.play("Run")
+		if velocity.y == 0:
+			anim.play("Run")
 	else:
-		anim.play("Idle")
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		anim.play("Idle")
 
 	move_and_slide()

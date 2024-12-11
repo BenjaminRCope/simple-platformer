@@ -13,7 +13,7 @@ size = Vector2(28, 158)
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_ej755")]
-position = Vector2(558, 419)
+position = Vector2(205, 25)
 
 [node name="Floor" type="StaticBody2D" parent="."]
 position = Vector2(59, 50)
