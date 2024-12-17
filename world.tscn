@@ -166,7 +166,7 @@ tile_set = SubResource("TileSet_403w3")
 [node name="Player" type="Node2D" parent="."]
 
 [node name="Player" parent="Player" instance=ExtResource("1_ej755")]
-position = Vector2(-539, 178)
+position = Vector2(-162, 164)
 
 [node name="Mobs" type="Node2D" parent="."]
 
